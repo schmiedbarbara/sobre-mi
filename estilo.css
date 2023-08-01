@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+/*SUAVIZADO*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*CONFIGURACION DE LETRA*/
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 0.2);
+}
+h1{font-size: 3.5em;}
+h2{font-size:2.7em;}
+h3{font-size:2em;}
+p{font-size:1.25em;}
+ul{list-style: none;}
+li{font-size:1.25em;}
+
+/*CONFIGURACION DE BOTON*/
+button{
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color:rgb(57, 32, 32);
+    background-color:rgb(201, 181, 181);
+    
+}
+button:hover{
+    background-color: rgb(195, 161, 161);
+}
+
+.container{
+    max-width: 1400px;
+    margin:auto;
+}
+
+
+header{
+    background-color: rgb(245,245,245);
+}
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: rgb(209, 189, 189);
+    text-shadow:3px 5px 8px rgba(1, 1, 1, 0.9);
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/encabezado.jpg");
+    background-repeat: repeat;
+    height: 17px;
+    background-color: rgb(195, 161, 161);
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    background-color: rgb(195, 161, 161);
+}
+/*Elementos de navegación, elegí un estilo acorde a la imagen de fondo tanto del encabezado
+como del banner*/
+header a{
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 170px;
+    text-decoration:none;
+    font-weight: bold;
+    color:rgb(101, 77, 77);
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgb(201, 181, 181);
+    box-shadow: 2px 2px 10px rgba(19, 2, 2, 0.5);
+}
+
+header a:hover{
+    background-color: rgb(195, 161, 161);
+}
+
+/*Defini un tamaño de 90vh para que el banner pueda ocupar la mayoría de pantalla*/
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    color:white;
+    background-image: linear-gradient(
+        rgba(237, 212, 212, 0.379),
+        rgba(237, 215, 215, 0.2)
+    ),url("img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 1);
+    
+}
+
+#banner h1{
+    color:rgb(255, 255, 255);
+}
+
+
+
+#banner .container{
+    text-align: center;
+    padding: 200px 12px;
+
+}
+
+#sobre-mi .img-container{
+    padding: 10px 14px;
+    height: 50vh;
+    text-align: center;
+    background-color: rgb(214, 172, 169)04, 43;
+}
+
+
+#intereses{
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    border: 2px solid rgba(189, 166, 166, 0.5);
+    background-color: rgb(201, 181, 181);
+    box-shadow: 2px 2px 10px rgba(80, 48, 48, 0.7);
+    text-align: center;
+    background-color: rgb(0,0,0,0.01);
+    color:rgb(0, 0, 0);
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 0.3);
+}
+
+#intereses .container{
+    padding: 40px 12px;
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 0.2);
+}
+
+
+#intereses p{
+    display: flex;
+    flex-direction: column;
+}
+
+#intereses h2{
+    margin-top: 0;
+    font-size: 2.7em;
+}
+
+/*Dependiendo de su estilo, los items se encuentran en un extremo o centrados*/
+#intereses .item1{
+    background-position: center center;
+    background-size: cover;
+    text-align: left;
+    
+    margin: 20px;
+    border-radius: 30;
+    
+    
+    
+}
+
+#intereses .item2{
+    text-align: right;
+    padding: 15px;
+    align-items: center;
+    
+}
+#intereses .item3{
+    text-align: center;
+    padding: 15px;
+    align-items: center;
+    
+}
+/*Quise que el pie de pagina se viera alineado con la estética de la pagina, 
+por eso se mantiene un tipo de configuracion similar con el resto de elementos*/
+footer{
+    text-align: center;
+    display: flexbox;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    height: 5;
+    background-image: linear-gradient(
+        rgba(237, 212, 212, 0.379),
+        rgba(237, 215, 215, 0.2)
+    ),url("img/final2.jpg");
+    height: 10px;
+    padding-top: 10px;
+    text-shadow: 2px 2px 2px rgb(224, 193, 193);
+}
+
+#experiencias .container{
+    text-align: center;
+    padding: 10px 12px;
+    color:black;
+    text-shadow: 3px 5px 8px rgba(1, 1, 1, 0.2);
+    background-color: rgb(242, 228, 228);
+}
+
+#experiencias li{
+    margin: 15px 0px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(224, 193, 193);
+    
+    
+
+}
+
+#experiencias .img-container{
+    
+    height: 45vh;
+    background-position: center center;
+    background-size: cover;
+    text-align:center;
+
+}
