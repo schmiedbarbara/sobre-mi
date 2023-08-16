@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Calculadora</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <!--Link funciones de JavaScript-->
+    <script type="text/javascript" src="js/script.js"></script>
+    <div class="container">
+
+        <!--Form del Menú-->
+        <form>
+            <h1>Calculadora </h1>
+            <div class="menu-bar">
+                <!--Menu Desplegable-->
+                <select name="menu" id="menu"> 
+                    <option>Seleccione una opcion</option>
+                    <option value="Suma";>Suma</option>
+                    <option value="Resta">Resta</option>
+                    <option value="Multiplicacion">Multiplicacion</option>
+                    <option value="Division">Division</option>
+                </select>
+                <div class="num1">
+                    <input type="text" name="casilla" id="num1" placeholder="Escribe primer operando" required="required" minlength="1"
+                maxlength="10" />
+                </div>
+                <div class="num2">
+                    <input type="text" name="casilla" id="num2" placeholder="Escribe segundo operando" required="required" minlength="1"
+                maxlength="10" />
+                </div>
+                
+            <!--Botones-->
+            <div id="campos">
+                <button onclick= "borrar();">Reset</button>
+            </div>
+            </div>
+        </form>
+        <div id="calcular">
+            <button onclick="calcular();">Calcular</button>
+            <p> El resultado es: <span id="result"></span> </p>
+        </div>
+    </div>
+</body>
+</html>
